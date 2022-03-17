@@ -191,6 +191,13 @@ form i{
 #now .hidden-img{
     display: none;
 }
+#social img{
+    padding-bottom: 40px;
+}
+#social .text h2{
+    padding: 60px 0;
+    font-size: 36px;
+}
 
 
 
