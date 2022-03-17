@@ -6,6 +6,7 @@
     --grey: #727272;
     --dark-grey: #1F1F1F;
     --light-grey: #BEBCBB;
+    --dark-blue: #161C3B;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -102,7 +103,7 @@ form i{
     background-color: var(--dark-grey) ;
     padding-bottom: 40px;
 }
-#new-games .card, #explore .card, #plus .card{
+#new-games .card, #explore .card, #plus .card, #now .card{
     border: 0;
     background-color: transparent;
 }
@@ -167,7 +168,29 @@ form i{
 #store img{
     margin: 20px 0;
 }
-
+#now{
+    background-color: var(--dark-blue);
+}
+#now .card-body{
+    padding: 0;
+    padding-bottom: 20px;
+}
+#now .card img{
+    width: 60%;
+    padding: 20px 0;
+}
+#now .card-text{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+#now button{
+    background-color: #ffffff;
+    color: var(--black);
+    border: 0;
+}
+#now .hidden-img{
+    display: none;
+}
 
 
 
@@ -179,6 +202,9 @@ form i{
 /* media query */
 @media screen and (min-width: 768px){
     #plus .hidden-img{
+        display: block;
+    }
+    #now .hidden-img{
         display: block;
     }
 }
