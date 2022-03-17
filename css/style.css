@@ -5,11 +5,14 @@
     --light-blue: #0072CE;
     --grey: #727272;
     --dark-grey: #1F1F1F;
+    --light-grey: #BEBCBB;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.col-md{
+    flex: 1 0 0%;
+}
 
 /* Header */
 .header-top{
@@ -68,7 +71,7 @@ form i{
     color: var(--grey);
     font-size: 22px;
 }
-#playstation5 button{
+#playstation5 button, #explore button{
     background-color: var(--light-blue);
     border: 0;
 }
@@ -97,8 +100,9 @@ form i{
 }
 #new-games{
     background-color: var(--dark-grey) ;
+    padding-bottom: 40px;
 }
-#new-games .card{
+#new-games .card, #explore .card, #plus .card{
     border: 0;
     background-color: transparent;
 }
@@ -113,6 +117,40 @@ form i{
     font-size: 30px;
     padding-bottom: 10px;
 }
+#explore{
+    padding-bottom: 40px;
+}
+#explore .text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#explore .text .grey{
+    color: var(--grey);
+    font-size: 20px;
+}
+#plus{
+    background-color: var(--light-grey);
+}
+#plus .card-body{
+    padding: 0;
+    padding-bottom: 20px;
+}
+#plus .card img{
+    width: 60%;
+    padding: 20px 0;
+}
+#plus .card-text{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+#plus button{
+    background-color: #D9DADC;
+    color: var(--light-blue);
+    border: 0;
+}
+#plus .hidden-img{
+    display: none;
+}
 
 
 
@@ -123,6 +161,11 @@ form i{
 
 
 /* media query */
+@media screen and (min-width: 768px){
+    #plus .hidden-img{
+        display: block;
+    }
+}
 @media screen and (min-width: 992px) {
     #jumbotron .card{
         width: 35%;
