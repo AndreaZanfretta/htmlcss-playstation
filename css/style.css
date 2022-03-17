@@ -151,6 +151,22 @@ form i{
 #plus .hidden-img{
     display: none;
 }
+#store{
+    margin-bottom: 50px;
+}
+#store .text h2{
+    font-size: 42px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+#store .text .grey{
+    font-size: 24px;
+    color: var(--grey);
+    padding-bottom: 10px;
+}
+#store img{
+    margin: 20px 0;
+}
 
 
 
