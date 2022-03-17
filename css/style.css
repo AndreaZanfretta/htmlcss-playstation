@@ -198,8 +198,31 @@ form i{
     padding: 60px 0;
     font-size: 36px;
 }
-
-
+/* Footer */
+footer{
+    background-color: #00439C;
+}
+#footer-top img{
+    height: 100px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#footer-top ul{
+    list-style: none;
+}
+#footer-top ul li a{
+    text-decoration: none;
+    color: white;
+}
+.spacer{
+    padding: 40px 0;
+}
+#footer-bot{
+    padding-bottom: 60px;
+}
+#footer-bot img{
+    height: 50px;
+}
 
 
 
