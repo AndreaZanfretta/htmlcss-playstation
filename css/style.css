@@ -43,11 +43,51 @@ form i{
 /* navbar */
 .dropdown{
     position: static;
+    overflow: hidden;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu{
     width: 100%;
     top: 50px;
     border: 0;
+}
+.dropdown-item p .fa-circle{
+    color: var(--light-blue);
+    font-size: 10px;
+    vertical-align: middle;
+}
+.dropdown-item p{
+    font-size: 18px;
+    vertical-align: middle;
+    margin: 0;
+}
+.dropdown-toggle::after{
+    transition: all 0.2s linear;
+}
+.dropdown-toggle.show::after{
+    transform: rotate(180deg);
+}
+.dropdown-menu{
+    animation: up 1s 1;
+}
+.dropdown-menu.show{
+    animation: drop 1s 1 ;
+    z-index: -1;
+}
+@keyframes drop {
+    0%{
+        top: -129px
+    }
+    100% {
+        top: 50px;
+    }
+}
+@keyframes up {
+    0%{
+        top: 50px
+    }
+    100% {
+        top: -129px;
+    }
 }
 
 
