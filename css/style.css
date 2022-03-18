@@ -81,7 +81,7 @@ form i{
 #playstation5 .accessory .col-4 .img-wrapper{
     max-width: 120px;
 }
-#playstation5 .img-wrapper:hover .filtered{
+#playstation5 .accessory .col-4:hover .img-wrapper{
     filter: grayscale(0%);
 }
 #playstation5 .col-md:hover  .box{
