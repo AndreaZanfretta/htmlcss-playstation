@@ -17,6 +17,7 @@ body{
 .wrapper{
     padding: 5px;
     display: inline-block;
+    transition: all 0.2s linear;
 }
 /* Header */
 .header-top{
@@ -39,6 +40,17 @@ form i{
     line-height: 66px;
     margin-left: 30px;
 }
+/* navbar */
+.dropdown{
+    position: static;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    width: 100%;
+    top: 50px;
+    border: 0;
+}
+
+
 /* Main */
 #jumbotron{
     width: 100%;
@@ -63,6 +75,34 @@ form i{
     background-color: var(--orange);
     border-color: var(--black);
 }
+.games{
+    margin-bottom: 70px;
+}
+
+.games img{
+    border-radius: 20px;
+    padding: 3px;
+    border: 2px solid transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.games .col-6 .cover:hover + img{  
+    border: 2px solid #0072CE;
+    top: -10px;    
+    transition: top 1s;
+}
+
+.cover{
+    background-color: rgba(184, 181, 181, 0.199);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.cover:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
 #playstation5 .img-wrapper{
     margin-top: 30px;
     border-radius: 12px;
@@ -73,11 +113,7 @@ form i{
 #jumbotron .wrapper:hover{
     background-color: var(--orange);
 }
-#playstation5 .game{
-    width: 100%;
-    height: 100%;
-    border: 2px var(--light-blue);
-}
+
 #playstation5 .accessory .col-4 .img-wrapper{
     max-width: 120px;
 }
